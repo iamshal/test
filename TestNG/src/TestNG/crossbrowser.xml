@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Webdriver" parallel="tests">
+
+<test name="verifytitleonFF">
+<parameter name ="browser" value="Mozilla"/>
+<classes>
+      <class name="TestNG.Crossbrowser"/>
+      
+    </classes>
+ </test>
+   
+  <test name="verifytitleonChrome">
+<parameter name ="browser" value="chrome"/>
+<classes>
+      <class name="TestNG.Crossbrowser"/>
+      
+    </classes>
+ </test>
+
+
+ <test name="verifytitleonIE">
+<parameter name ="browser" value="IE"/>
+ 
+    <classes>
+      <class name="TestNG.Crossbrowser"/>
+       
+    </classes>
+  </test>
+  
+  
+  </suite>
